@@ -71,11 +71,8 @@ function getArt() {
 
     }
 
-    /**
-     * Work-around to encourage cache collision.
-     *
-     * https://openseadragon.github.io/examples/tilesource-legacy/
-     */
+    //this formats the image url
+    //uses iiif: https://openseadragon.github.io/examples/tilesource-legacy/
     function getIIIFLevel(artwork, displayWidth) {
         return {
             url: 'https://www.artic.edu/iiif/2/' + artwork.image_id + '/full/' + displayWidth + ',/0/default.jpg',
